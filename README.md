@@ -131,3 +131,91 @@ Free, open data sources
         - eg.: censuses, surveys
     - Government agencies
         - eg.: weather, environment, population
+## Why care about Data Types?
+
+- Storing the data - Because all types of data cannot be stored together
+- Visualising/Analysing - Not all visualisations and analysis can be performed with all data types
+
+### There are two general types of data
+
+- Qualitative
+    - Deals with descriptions
+    - Data cannot be measured but observed
+- Quantitative
+    - Counted/Measured
+
+### Other data types
+
+- Image Data
+- Text Data
+- Geospatial Data
+- Network Data
+
+### Things to consider when storing data
+
+- location
+- Data type
+- Retrieval
+
+### Location
+
+Parallel Storage Solution
+
+- Storing the data across many different computer
+
+The Cloud
+
+- Storing the data in Cloud
+
+### Type
+
+- Unstructured
+    - Email
+    - Text
+    - Video/Audio
+    - Web Page
+    - Social Media
+- Tabular
+    - Stored in table
+    - Relational Database
+
+### Retrieval
+
+- Data Querying
+    - Document Database - NoSQL
+    - Relational Database - SQL
+
+# Data Pipeline
+
+A **data pipeline** is a series of data processing steps. If the data is not currently loaded into the data platform, then it is ingested at the beginning of the pipeline. Then there are a series of steps in which each step delivers an output that is the input to the next step. This continues until the pipeline is complete. In some cases, independent steps may be run in parallel.
+
+Data pipelines consist of three key elements: a source, a processing step or steps, and a destination. In some data pipelines, the destination may be called a sink.
+
+![24_DataPipleline-1](https://user-images.githubusercontent.com/48999616/150748994-e6800310-f098-4f80-a420-d2046fe4edb7.png)
+
+
+- Moves data in defined storage
+    - Eg: From data insertion from an API to loading data into a database.
+- Automated Collection and storage
+    - Scheduled, hourly or Daily
+    - Triggered by an Event
+- Monitored with generated alerts
+- Necessary for Big Data projects
+- Data Engineers works to customise solution
+- Extract Transform Load (ETL) - Data Pipeline Framework
+
+### How does it all come together?
+
+- Extracting
+    - We begin extracting the data from all sources
+- Transform
+    - We then organise the data
+        - Joining the data sources into one data set
+        - Converting data structures to fit database schemas
+        - Removing irrelevant data
+
+*Data exploration and preparation does not occur on this stage*
+
+- Load
+    - We load the data so that it could be used for visualisation and analysis
+
